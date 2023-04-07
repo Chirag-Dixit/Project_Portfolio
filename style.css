@@ -1,0 +1,148 @@
+body{
+  /* background-color: rgb(194, 223, 251); */
+  background-image: linear-gradient(rgb(132, 197, 254), aliceblue);
+  color: rgb(81, 80, 80);
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Oxanium', cursive;
+}
+
+#header{
+  display: flex;
+  
+}
+
+#beside_hello{
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+#social_media{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#body_heads{
+  display: flex;
+  justify-content: space-around;
+}
+
+#main_body{
+  margin-top: 50px;
+  margin-left: 100px;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 100px;
+}
+
+#heads_materials{
+  margin-top: 150px;
+}
+
+#text_about_me{
+  margin-left: 100px;
+  margin-right: 0;
+  margin-top: 40px;
+  width: 850px;
+  text-align: justify;
+  background-color: bisque;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 4px 4px rgb(140, 191, 236);
+  margin-bottom: 50px;
+}
+#me_me{
+  height: 500px;
+  width: 500px;
+  position: relative;
+  bottom: 100px;
+  right: 60px;
+  /* margin-right: 500px; */
+}
+
+
+#text_about_me img{
+  width: 900px;
+  height: 250px;
+}
+
+#button1, #button2, #button3{
+  width: 150px;
+  padding: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Oxanium', cursive;
+  color: rgb(81, 80, 80);
+  background-color: rgb(214, 229, 241);
+  border: none;
+  box-shadow: 3px 3px rgb(140, 191, 236);
+}
+
+button:active{
+  transform: translateX(4px);
+  box-shadow: 0 0;
+}
+
+#button1{
+  background-color: bisque;
+}
+
+#contact{
+  display: flex;
+}
+
+#reach{
+  margin-right: 100px;
+  margin-left: 300px;
+  margin-bottom: 30px;
+  border: solid 3px rgb(69, 67, 67);
+  background-color: rgb(209, 244, 232);
+  padding: 4px 15px 15px 15px;
+  box-shadow: 5px 5px rgb(65, 63, 63);
+  height: 130px;
+}
+
+#download-btn{
+  margin-top: 40px;
+  margin-left: 100px;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Oxanium', cursive;
+  color: rgb(81, 80, 80);
+  background-color: rgb(214, 229, 241);
+  border: none;
+  box-shadow: 3px 3px rgb(140, 191, 236);
+  position: relative;
+  left: 1100px;
+  bottom: 200px;
+}
+
+#form-submit{
+  position: relative;
+  bottom: 35px;
+}
+
+#reach_submit{
+  width: 100px;
+  position: relative;
+  top: 15px;
+  left: 450px;
+  height: 40px;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Oxanium', cursive;
+  color: rgb(81, 80, 80);
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 3px 3px gray;
+  border: solid 1px rgb(81, 75, 75);
+}
+
+#reach_submit:hover{
+  background-color: cornsilk;
+}
+
+#reach_submit:active{
+  transform: translate3d(0.90);
+  box-shadow: 0 0;
+}
