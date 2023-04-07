@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <img src="images/hello.jpg" alt="helloTextAppears" width="300px" height="300px" style="margin-left: 100px;">
+        <div id="beside_hello">
+            <h3 id="head">
+                This is an Online Portfolio made by me! My name is Chirag. You can check out my Social media handles here!
+            </h3>
+            <div id="social_media">
+                <a href="https://github.com/Chirag-Dixit" target="_blank">
+                    <img class="media_image" src="images/github.png" alt=""    width="70px" height="70px">
+                </a>
+                <a href="https://www.instagram.com/dixit_chirag344/" target="_blank">
+                    <img class="media_image" src="images/instagram.png" alt="" width="70px" height="70px">
+                </a>
+                <a href="https://www.linkedin.com/in/chirag-dixit-a5145022a/" target="_blank">
+                    <img class="media_image" src="images/linkedin.webp" alt="" width="70px" height="70px">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main_body">
+        <div id="heads_materials">
+            <div id="body_heads">
+                <button onclick="change1()" id="button1">About Me</button>
+                <button onclick="change2()" id="button2">Skills</button>
+                <button onclick="change3()" id="button3">Experience</button>
+            </div>
+
+            <div id="text_about_me">
+                
+            </div>
+        </div>
+        <img src="images/me_without_background.png" alt="A picture of me!" id="me_me">
+    </div>
+
+    <div id="contact">
+        <div id="reach">
+            <p>If you want to reach out to me, fill this form and I will contact you as soon as Possible!</p>
+            <form  onsubmit="return validateForm()">
+                <table id="form-submit">
+                <div>
+                            <tr>
+                                <td>
+                                    Name
+                                </td>
+                                <td>
+                                    <input type="text" id="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Phone Number 
+                                </td>
+                                <td>
+                                    <input type="number" id="phno">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Email
+                                </td>
+                                <td>
+                                    <input type="email" id="email">
+                                </td>
+                            </tr>
+                    </div>
+                            <input type="submit" value="Submit" id="reach_submit">
+                        </table>
+                    </form>
+            </div>
+                    
+        </div>
+        <a href="file.txt" download="chirag_cv">
+            <button id="download-btn">Download my CV from here</button>
+        </a>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phno = document.getElementById("phno").value;
+          
+            if (name == "" || email == "" || phno == "") {
+              alert("Please fill out all fields.");
+              return false;
+            }
+          
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+              alert("Please enter a valid email address.");
+              return false;
+            }
+          
+            alert('Thank you. I will reach out to you as soon as Possible!')
+            return true;
+          }
+    </script>
+</body>
+</html>
